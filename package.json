@@ -1,0 +1,11 @@
+{
+  "name": "toeic-foundation-quest",
+  "version": "1.0.0",
+  "private": true,
+  "description": "TOEIC Foundation Interactive Exam Simulator: 30 items (Listening 9, Reading 9, Speaking 12) with instant Thai feedback, vocabulary cards, speech synthesis audio, microphone practice and final analytics (HTML, CSS, vanilla JS)",
+  "scripts": {
+    "start": "python3 -m http.server 5500",
+    "build:data": "node tools/build-data.cjs",
+    "test": "node tests/validate-bank.cjs && node tests/e2e.test.cjs"
+  }
+}

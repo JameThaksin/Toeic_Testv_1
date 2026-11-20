@@ -1,0 +1,353 @@
+{
+  "date": "2026-11-20T11:55:30.587Z",
+  "url": "http://127.0.0.1:8822/index.html",
+  "passed": 69,
+  "failed": 0,
+  "results": [
+    {
+      "name": "หน้าเว็บโหลดได้และแสดงหน้าต่างเริ่มสอบ",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "หน้าเริ่มแสดง Listening 9 / Reading 9 / Speaking 12",
+      "ok": true,
+      "detail": "9/9/12"
+    },
+    {
+      "name": "ปุ่มทดสอบเสียงสั่งอ่านออกเสียงได้",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "แสดงชื่อผู้ทำ",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "Navigator มี 30 ช่อง แบ่ง 3 กลุ่ม",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "Layout เดสก์ท็อป: Main ≈ 75% / Navigator ≈ 25%",
+      "ok": true,
+      "detail": "75%"
+    },
+    {
+      "name": "เริ่มที่ QUESTION 1 / 30 และข้อ 1 เป็นข้อปัจจุบัน (กรอบน้ำเงิน)",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "Part 1 มีภาพประกอบ SVG",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "Part 1 ซ่อนข้อความตัวเลือกก่อนตอบ (ฟังจากเสียง)",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "Progress bar เริ่มที่ 0",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "Transcript เปิดไม่ได้ก่อนตอบ (แจ้งเตือน)",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "ปุ่ม Play อ่านบทครบทุกบรรทัดด้วย Speech Synthesis",
+      "ok": true,
+      "detail": "6 utterances"
+    },
+    {
+      "name": "ตัวควบคุมความเร็วเสียงมีผล (0.7x)",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "สถานะเสียงแสดงว่าเล่นจบแล้ว",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "ปุ่ม Replay เล่นซ้ำตั้งแต่ต้น",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "Part 3 ใช้เสียงต่างกันสำหรับผู้หญิงและผู้ชาย",
+      "ok": true,
+      "detail": "Samantha / Google US English Male"
+    },
+    {
+      "name": "ตอบผิด: แสดง INCORRECT ทันที",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "Feedback 10 หัวข้อตามรูปแบบที่กำหนด",
+      "ok": true,
+      "detail": "Result | Correct Answer | Why Correct? | Why Your Answer Is Wrong? | Why Other Choices Are Wrong? | Key Vocabulary | Grammar Point | Real Workplace Application | Exam Strategy | What You Learned"
+    },
+    {
+      "name": "แสดงคำตอบที่เลือก คำตอบที่ถูก และวิเคราะห์ทุกตัวเลือก",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "Vocabulary Card มี IPA, คำแปล, ตัวอย่าง, collocations",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "ตัวเลือกแสดงสีถูก (เขียว) / ผิด (แดง) และข้อความตัวเลือกถูกเปิดหลังตอบ",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "Navigator ข้อ 1 เป็นสีแดง (ผิด)",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "ยืนยันแล้วเปลี่ยนคำตอบไม่ได้ (คลิก/คีย์ลัด) และไม่นับคะแนนซ้ำ",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "Transcript เปิดได้หลังตอบ",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "ปุ่มฟังคำศัพท์ออกเสียงได้",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "ตอบถูก: แสดง CORRECT และ Why Your Answer Is Right",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "Mark for Review: ช่องข้อที่ยังไม่ตอบเป็นสีเหลือง",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "ทำ Listening + Reading ครบ 18 ข้อ และถูก/ผิดตรงตามที่ตอบ",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "Navigator ข้อ 2 สีเขียว และข้อ 3 ที่ทำเครื่องหมายมีดาว",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "Section tabs นับความคืบหน้า",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "ข้อ 19 เป็น Speaking (หน้าพิมพ์คำตอบ + ไมโครโฟน)",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "ปุ่มฟังโจทย์ Speaking อ่านโจทย์ได้",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "ตัวจับเวลาฝึกพูดทำงาน (เวลาเตรียม)",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "นับจำนวนคำแบบ real-time",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "ส่ง Speaking ตัวอย่างที่ดี: ได้คะแนน ≥ 85 และช่องเป็นสีเขียว",
+      "ok": true,
+      "detail": "95"
+    },
+    {
+      "name": "Speaking feedback มี 10 หัวข้อ รวมตัวอย่างคำตอบและเกณฑ์ Grammar/Vocabulary/Structure/Fluency/Natural",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "Fluency ไม่ถูกประเมินเมื่อไม่มีเสียง",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "ส่งแล้วแก้คำตอบไม่ได้ (readonly + ไม่มีปุ่มส่ง)",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "คำตอบสั้นเกินไปมีหน้าต่างยืนยันก่อนส่ง",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "คำตอบที่ผิดไวยากรณ์/สั้นได้คะแนนต่ำ ช่องเป็นสีแดง และชี้จุดผิดพร้อมวิธีแก้",
+      "ok": true,
+      "detail": "49"
+    },
+    {
+      "name": "อัดเสียงผ่านไมโครโฟนได้ และถอดเสียงเป็นข้อความลงช่องคำตอบ",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "หยุดอัดแล้วฟังเสียงตัวเองได้ (audio player)",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "คำตอบที่อัดเสียงได้รับการประเมิน Fluency",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "คลิก Navigator กลับไปข้อที่ตอบแล้วอ่านคำอธิบายได้",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "Refresh แล้วข้อมูลไม่หาย (คำตอบ, Speaking, ข้อปัจจุบัน, เครื่องหมาย, ชื่อ)",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "เวลาที่ใช้ไม่ถูกรีเซ็ตหลัง Refresh",
+      "ok": true,
+      "detail": "16000"
+    },
+    {
+      "name": "ร่างคำตอบ Speaking ที่ยังไม่ส่งถูกบันทึกไว้",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "ไม่มี Dead Buttons: ทุกปุ่มในหน้าข้อสอบมี click handler",
+      "ok": true,
+      "detail": "48 ปุ่ม"
+    },
+    {
+      "name": "จบการสอบก่อนครบ: เตือนจำนวนข้อที่ยังไม่ทำ",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "Performance: L&R ถูก 16 ผิด 2 (Accuracy 88.9%)",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "แสดงเวลาที่ใช้",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "Skill Analysis 3 ทักษะ พร้อมสัดส่วน 30/30/40",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "Knowledge Analysis 4 ด้าน (Grammar / Vocabulary / Listening / Reading Comprehension)",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "Grammar Weakness ระบุหัวข้อที่ผิด (Subject-Verb Agreement)",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "Learning Recommendations ครบ 5 หัวข้อ",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "ไม่แปลงคะแนนเป็น TOEIC 990 และรายงาน Speaking แยกจาก L&R",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "ประวัติการสอบบันทึก 1 รายการ",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "ไม่มี Dead Buttons: ทุกปุ่มในหน้าผลวิเคราะห์มี click handler",
+      "ok": true,
+      "detail": "69 ปุ่ม"
+    },
+    {
+      "name": "ลิงก์ \"ข้อ N\" ในคำแนะนำพาไปยังข้อนั้น",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "ข้อที่ไม่ได้ทำ: หลังจบสอบดูคำตอบตัวอย่างได้ แต่ส่งไม่ได้",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "รีเฟรช/กดดูผลซ้ำ: ผลยังอยู่ และไม่บันทึกคะแนนซ้ำ",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "เริ่มชุดใหม่: กรอกชื่อเดิมไว้ให้",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "เริ่มชุดใหม่ได้ คำตอบว่าง และประวัติเดิมยังอยู่",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "Mobile 390px: ไม่มี horizontal scroll",
+      "ok": true,
+      "detail": "0"
+    },
+    {
+      "name": "Mobile: Navigator ย้ายลงไปใต้คำถาม",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "Mobile: แตะตอบแล้วเห็น feedback",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "Mobile: หน้า Speaking ไม่ล้นจอ",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "เปิด index.html ตรงจากไฟล์ (file://) ได้โดยไม่ต้องมี server",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "ไม่มี JavaScript error ใน console",
+      "ok": true,
+      "detail": ""
+    }
+  ]
+}

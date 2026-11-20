@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TOEIC Foundation Quest</title>
+  <meta name="description" content="TOEIC Foundation Interactive Exam Simulator 30 ข้อ (Listening 9 / Reading 9 / Speaking 12) พร้อม Instant Feedback ภาษาไทย Vocabulary Card และ Final Analytics">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%236b8cff'/%3E%3Cstop offset='1' stop-color='%2363d3c6'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='64' height='64' rx='16' fill='url(%23g)'/%3E%3Ctext x='32' y='43' font-family='Arial' font-weight='700' font-size='30' text-anchor='middle' fill='%23101830'%3ET%3C/text%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="app" id="app">
+    <!-- ===== Header ===== -->
+    <header class="site-header">
+      <div class="brand">
+        <div class="brand-logo" aria-hidden="true">T</div>
+        <div>
+          <h1 class="brand-title">TOEIC FOUNDATION</h1>
+          <p class="brand-sub">Interactive Exam Simulator · Listening · Reading · Speaking</p>
+        </div>
+      </div>
+      <div class="header-pill">Foundation Assessment • ไม่ใช่ข้อสอบ TOEIC มาตรฐาน</div>
+    </header>
+
+    <div class="layout" id="layout">
+      <!-- ===== Main question area (75%) ===== -->
+      <main class="main-col" id="mainCol">
+        <section id="examView" class="view hidden">
+          <div class="exam-top">
+            <div>
+              <p class="q-counter" id="qCounter">QUESTION 1 / 30</p>
+              <p class="taker"><span id="sectionLine">Listening</span> · ผู้ทำ: <span id="takerName">-</span> <button class="link-btn" id="editNameBtn" type="button">แก้ไข</button></p>
+            </div>
+            <div class="top-right">
+              <div class="pill" id="timerPill" title="เวลาที่ใช้ (นับเฉพาะตอนเปิดหน้าเว็บ)">⏱ <b id="timer">00:00</b></div>
+              <div class="pill" id="answeredPill">ตอบแล้ว <b id="answeredCount">0</b> / <span id="answeredTotal">30</span></div>
+            </div>
+          </div>
+          <div class="progress" role="progressbar" aria-label="ความคืบหน้า" aria-valuemin="0" aria-valuemax="30" id="progressBar">
+            <div class="progress-fill" id="progressFill"></div>
+          </div>
+          <div class="section-tabs" id="sectionTabs" role="tablist" aria-label="ส่วนของข้อสอบ"></div>
+
+          <article class="q-card" id="qCard">
+            <div class="badges" id="badges"></div>
+            <h2 class="q-text" id="qText">กำลังโหลดข้อสอบ...</h2>
+            <p class="q-sub hidden" id="qSub"></p>
+
+            <!-- listening audio -->
+            <div class="audio-panel hidden" id="audioPanel">
+              <div class="audio-row">
+                <button type="button" class="btn btn-primary btn-audio" id="playBtn">▶ เล่นเสียง</button>
+                <button type="button" class="btn btn-outline btn-audio" id="replayBtn">↺ เล่นซ้ำ</button>
+                <label class="rate">
+                  <span>ความเร็ว</span>
+                  <select id="rateSel" aria-label="ความเร็วเสียง">
+                    <option value="0.7">0.7x ช้า</option>
+                    <option value="0.85">0.85x</option>
+                    <option value="1" selected>1.0x ปกติ</option>
+                    <option value="1.15">1.15x</option>
+                    <option value="1.3">1.3x เร็ว</option>
+                  </select>
+                </label>
+              </div>
+              <div class="audio-status" id="audioStatus">กด "เล่นเสียง" เพื่อฟังโจทย์ (ใช้เสียงอ่านของเบราว์เซอร์)</div>
+              <div class="wave" id="wave" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+            </div>
+
+            <figure class="figure hidden" id="figure" role="img" aria-label="ภาพประกอบโจทย์"></figure>
+            <div class="passage hidden" id="passage"></div>
+
+            <div class="options" id="options" role="group" aria-labelledby="qText"></div>
+
+            <!-- speaking -->
+            <div class="speaking hidden" id="speakingBox">
+              <div class="sp-situation" id="spSituation"></div>
+              <div class="sp-prompt">
+                <div class="sp-prompt-head">
+                  <span class="sp-label">TASK</span>
+                  <button type="button" class="btn btn-ghost btn-sm" id="spListenBtn">🔊 ฟังโจทย์</button>
+                </div>
+                <p class="sp-prompt-en" id="spPrompt"></p>
+                <p class="sp-prompt-th" id="spPromptTh"></p>
+              </div>
+              <div class="sp-meta" id="spMeta"></div>
+              <div class="sp-timer-row">
+                <button type="button" class="btn btn-outline btn-sm" id="spTimerBtn">⏱ เริ่มจับเวลาฝึก</button>
+                <span class="sp-timer" id="spTimer" aria-live="polite"></span>
+              </div>
+              <div class="sp-record">
+                <button type="button" class="btn btn-outline btn-sm" id="recBtn">🎙 เริ่มอัดเสียง</button>
+                <span class="rec-status" id="recStatus"></span>
+                <audio id="recAudio" class="hidden" controls></audio>
+              </div>
+              <label class="sp-text-label" for="spText">คำตอบของคุณ (ภาษาอังกฤษ)</label>
+              <textarea id="spText" rows="6" spellcheck="false" placeholder="พิมพ์คำตอบเป็นภาษาอังกฤษ หรือกด 🎙 เพื่อพูด ระบบจะถอดเสียงเป็นข้อความให้ (ถ้าเบราว์เซอร์รองรับ)"></textarea>
+              <div class="sp-foot">
+                <span class="sp-count" id="spCount">0 คำ</span>
+                <button type="button" class="btn btn-primary" id="spSubmit">ส่งคำตอบและดูผลประเมิน</button>
+              </div>
+            </div>
+
+            <div class="transcript-wrap hidden" id="transcriptWrap">
+              <button type="button" class="btn btn-ghost btn-sm" id="transcriptBtn">📄 Transcript</button>
+              <div class="transcript hidden" id="transcript"></div>
+            </div>
+
+            <div class="feedback hidden" id="feedback" aria-live="polite"></div>
+
+            <div class="q-actions">
+              <button type="button" class="btn btn-ghost" id="prevBtn">← ย้อนกลับ</button>
+              <button type="button" class="btn btn-outline" id="markBtn"><span class="star">☆</span> <span class="lbl">ทบทวนทีหลัง</span></button>
+              <button type="button" class="btn btn-primary" id="nextBtn">ข้อถัดไป →</button>
+            </div>
+          </article>
+          <p class="kbd-hint">คีย์ลัด: <kbd>1</kbd>–<kbd>4</kbd> หรือ <kbd>A</kbd>–<kbd>D</kbd> เลือกคำตอบ · <kbd>P</kbd> เล่นเสียง · <kbd>←</kbd> <kbd>→</kbd> เปลี่ยนข้อ · <kbd>M</kbd> ทำเครื่องหมายทบทวน</p>
+        </section>
+
+        <section id="resultView" class="view hidden"></section>
+
+        <section id="errorView" class="view hidden">
+          <div class="result-card">
+            <h2 class="result-title">โหลดคลังข้อสอบไม่สำเร็จ</h2>
+            <p class="result-msg" id="errorMsg"></p>
+          </div>
+        </section>
+      </main>
+
+      <!-- ===== Question navigator (25%) ===== -->
+      <aside class="nav-col" id="navCol" aria-label="Question Navigator">
+        <div class="nav-card">
+          <h2 class="nav-title">ข้อสอบทั้งหมด</h2>
+          <p class="nav-sub">คลิกหมายเลขเพื่อไปยังข้อนั้น ข้อที่ตอบแล้วกลับไปอ่านคำอธิบายได้</p>
+          <ul class="legend">
+            <li><span class="sw correct"></span>ถูก</li>
+            <li><span class="sw incorrect"></span>ผิด</li>
+            <li><span class="sw marked"></span>ทบทวน</li>
+            <li><span class="sw empty"></span>ยังไม่ตอบ</li>
+            <li><span class="sw current"></span>ข้อปัจจุบัน</li>
+          </ul>
+          <div id="navGroups"></div>
+          <div class="nav-footer">
+            <div class="nav-stats" id="navStats"></div>
+            <button type="button" class="btn btn-primary btn-block" id="finishBtn">จบการสอบและดูผลวิเคราะห์</button>
+            <button type="button" class="btn btn-ghost btn-block" id="restartBtn">เริ่มทำชุดใหม่</button>
+          </div>
+        </div>
+      </aside>
+    </div>
+  </div>
+
+  <!-- ===== Modal ===== -->
+  <div class="modal-backdrop hidden" id="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <div class="modal">
+      <div class="brand-logo modal-logo" aria-hidden="true">T</div>
+      <h2 class="modal-title" id="modalTitle"></h2>
+      <div class="modal-body" id="modalBody"></div>
+      <div class="modal-actions">
+        <button type="button" class="btn btn-ghost" id="modalCancel">ยกเลิก</button>
+        <button type="button" class="btn btn-primary" id="modalOk">ตกลง</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="toast hidden" id="toast" role="status"></div>
+
+  <!-- classic scripts: works from a web server and when index.html is opened directly (file://) -->
+  <script src="data/questions.js"></script>
+  <script src="js/illustrations.js"></script>
+  <script src="js/exam.js"></script>
+  <script src="js/store.js"></script>
+  <script src="js/audio.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

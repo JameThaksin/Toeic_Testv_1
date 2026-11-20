@@ -1,0 +1,222 @@
+{
+  "date": "2026-11-20T11:55:05.479Z",
+  "passed": 43,
+  "failed": 0,
+  "results": [
+    {
+      "name": "มีข้อสอบ 30 ข้อ",
+      "ok": true,
+      "detail": "30"
+    },
+    {
+      "name": "Speaking 12 / Reading 9 / Listening 9",
+      "ok": true,
+      "detail": "12/9/9"
+    },
+    {
+      "name": "สัดส่วนน้ำหนัก 40% / 30% / 30%",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "Listening: Photographs 2 / Question-Response 3 / Conversations 2 / Short Talks 2",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "Reading: Grammar & Incomplete Sentences 4 / Text Completion 2 / Reading Comprehension 3",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "Speaking: 6 หมวด หมวดละ 2 ข้อ",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "จำนวนข้อในแต่ละพาร์ตตรงกับ metadata",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "เลขข้อ 1–30 เรียงต่อเนื่อง",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "โครงสร้างทุกข้อถูกต้อง (ตัวเลือก, เฉลย, คำอธิบาย, Vocabulary Card, IPA, collocations, regex ของ Speaking)",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "ทุกข้อ MCQ มีคำตอบถูกเพียงข้อเดียว (choiceNotes ขึ้นต้น \"ถูก\" เพียงตัวเดียว)",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "อธิบายเหตุผลครบทุกตัวเลือก (ภาษาไทย ยาวพอ)",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "ตัวเลือกไม่ซ้ำกันในแต่ละข้อ",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "คำอธิบายเป็นภาษาไทยและมีตัวอย่างภาษาอังกฤษประกอบ",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "ทุกข้อ MCQ มี 10 ส่วนของ feedback (why, trap, grammar, vocab, workplace, strategy, learned)",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "Grammar Point มีตัวอย่างภาษาอังกฤษ",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "Real Workplace Application มีทั้งอังกฤษและคำแปลไทย",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "Vocabulary Card ครบ: คำ, คำแปลไทย, Part of Speech, IPA, ตัวอย่าง, collocations ≥ 2",
+      "ok": true,
+      "detail": "67 cards"
+    },
+    {
+      "name": "มีบัตรคำ postpone ตามตัวอย่างในโจทย์ (postpone a meeting / deadline / project)",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "เฉลย A/B/C/D กระจาย ไม่เดาได้จากตำแหน่ง (แต่ละตำแหน่ง ≤ 6 ข้อ)",
+      "ok": true,
+      "detail": "4/5/5/4"
+    },
+    {
+      "name": "ตัวเลือกที่ถูกไม่ใช่ตัวที่ยาวที่สุดเสมอ",
+      "ok": true,
+      "detail": "5/18"
+    },
+    {
+      "name": "Listening ทุกข้อมีบทเสียง (Speech Synthesis) และ Transcript",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "Part 1 / 2: ตัวเลือกอยู่ในเสียงครบทุกตัว (ซ่อนข้อความก่อนตอบ)",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "Part 1 ทุกข้อมีภาพประกอบ SVG เฉพาะข้อ (ไม่ใช่คำบรรยาย)",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "Part 3 / 4: แสดงคำถาม + คำแปลไทย ส่วนบทสนทนาอยู่ในเสียง",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "Part 6 / 7 มีบทความ (email / notice / advertisement)",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "Part 6 ช่องว่างในบทความตรงกับคำถาม",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "ความยากค่อย ๆ เพิ่ม: ในแต่ละพาร์ตไม่มีข้อที่ง่ายลง, แต่ละทักษะเริ่มที่ง่ายและจบที่ท้าทาย",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "Reading ครอบคลุม Parts of Speech, SVA, Pronouns, Tenses, Vocabulary, Conjunctions",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "คำตอบตัวอย่าง Speaking ทุกข้อได้ ≥ 85 และทำครบทุก Task",
+      "ok": true,
+      "detail": "95,98,95,98,100,95,100,100,100,100,95,100"
+    },
+    {
+      "name": "Speaking ทุกข้อมีคำตอบตัวอย่าง วลีที่มีประโยชน์ และข้อผิดพลาดที่พบบ่อย",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "คำตอบสั้นและผิดไวยากรณ์ได้ต่ำกว่าเกณฑ์ผ่าน และจับข้อผิดได้ (am work, very like, i)",
+      "ok": true,
+      "detail": "58"
+    },
+    {
+      "name": "ตัวตรวจ Grammar ไม่จับผิดประโยคที่ถูก (does he go / can go / it takes)",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "Common mistakes ของแต่ละข้อถูกตัวตรวจ Grammar จับได้อย่างน้อย 1 ข้อต่อ activity",
+      "ok": true,
+      "detail": "12/12"
+    },
+    {
+      "name": "Fluency ประเมินเฉพาะเมื่อมีเสียง",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "ล็อกคำตอบ: ตอบซ้ำไม่ได้ และไม่นับคะแนนซ้ำ",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "ส่ง Speaking ซ้ำไม่ได้",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "Analytics: L&R แยกจาก Speaking (ถูก 1 ผิด 1 จาก 18 ข้อ)",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "Analytics: Speaking คิดจาก 12 กิจกรรม ไม่ปนกับ L&R",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "ไม่มีการแปลงเป็นคะแนน 990 ในผลวิเคราะห์",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "มีคำแนะนำครบ 5 ด้าน",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "ประวัติการสอบไม่บันทึกซ้ำเมื่อจบการสอบซ้ำ (attemptId เดียว)",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "หลังจบการสอบตอบเพิ่มไม่ได้",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "data/questions.js ตรงกับ questions.json (รัน node tools/build-data.cjs หลังแก้ JSON)",
+      "ok": true,
+      "detail": ""
+    }
+  ]
+}
